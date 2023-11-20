@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navigation bar */
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  background-color: transparent;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4vw 8vw;
+  top: 0;
+  z-index: 999;
+  /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.60) */
+}
+
+nav img {
+  width: 145px;
+  cursor: pointer;
+}
+
+nav .navigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav .navigation ul li {
+  list-style: none;
+  margin-left: 30px;
+  flex-wrap: wrap;
+}
+
+nav .navigation ul li a {
+  text-decoration: none;
+  flex-wrap: wrap;
+  color: black;
+  font-size: 16px;
+  font-weight: 500px;
+  transition: 0.3s ease-in-out;
+}
+
+
+nav .navigation ul li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* -------------------------- THE HOME SECTION ------------------------ */
+
+/* HOME */
+#home1 {
+  background-image: url("../Images/car5.jpg");
+  width: 100%;
+  transition: background-image 2s ease;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards,
+    slideIn 1.5s ease-in-out 0.5s forwards;
+  padding-top: 30px;
+}
+
+#home1 h2 {
+  color: black;
+  text-shadow: 0 0 10px white;
+  text-align: center;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out 0.5s forwards,
+    slideIn 1.5s ease-in-out 0.5s forwards;
+}
+
+#home1 p {
+  text-align: center;
+  color: black;
+  font-size: medium;
+  text-shadow: 0 0 10px white;
+  width: 50%;
+  font-weight: 0.9rem;
+  line-height: 25px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out 1s forwards;
+}
+#home1 #info {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#home1 .btn {
+  margin-top: 30px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+#home1 a.blue,
+#home1 a.yellow {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: black;
+  color: white;
+  font-weight: 600px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#home1 a.blue:hover,
+#home1 a.yellow:hover {
+  background-color: white;
+  color: blue;
+}
+
+#home1 a.blue,
+#home1 a.yellow {
+  animation: fadeIn 1.5s ease-in-out 2s forwards;
+}
+
+/* ------------------ PART 2 SECTIONS ------------------------- */
+/* styles.css */
+#home2 {
+  background-image: url("../Images/car9.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards,
+    slideIn 1.5s ease-in-out 0.5s forwards;
+  padding-top: 30px;
+}
+#home2 #info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  justify-content: center;
+  padding: 1rem;
+}
+
+#home2 h2 {
+  color: black;
+  text-align: center;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out 0.5s forwards,
+    slideIn 1.5s ease-in-out 0.5s forwards;
+}
+
+#home2 #info p {
+  text-align: center;
+  color: red;
+  font-weight: 0.9rem;
+  line-height: 25px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out 1s forwards;
+}
+
+#home2 .btn {
+  margin-top: 30px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+#home2 a.blue,
+#home2 a.yellow {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: #fb6516;
+  color: white;
+  font-weight: 600px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#home2 a.blue:hover,
+#home2 a.yellow:hover {
+  background-color: white;
+  color: blue;
+}
+
+#home2 a.blue,
+#home2 a.yellow {
+  animation: fadeIn 1.5s ease-in-out 2s forwards;
+}
+
+/* ----------------------- THE HOME 3 SECTIOn  ------------------------------------ */
+#home3 {
+  background-image: url("../Images//car6.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards,
+    slideIn 1.5s ease-in-out 0.5s forwards;
+  padding-top: 30px;
+}
+#home3 #info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  justify-content: center;
+  padding: 1rem;
+}
+
+#home3 h2 {
+  color: black;
+  text-align: center;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out 0.5s forwards,
+    slideIn 1.5s ease-in-out 0.5s forwards;
+}
+
+#home3 #info p {
+  text-align: center;
+  color: red;
+  font-weight: 0.9rem;
+  line-height: 25px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out 1s forwards;
+}
+
+#home3 .btn {
+  margin-top: 30px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+#home3 a.blue,
+#home3 a.yellow {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: #b22a20;
+  color: white;
+  font-weight: 600px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#home3 a.blue:hover,
+#home3 a.yellow:hover {
+  background-color: white;
+  color: blue;
+}
+
+#home3 a.blue,
+#home3 a.yellow {
+  animation: fadeIn 1.5s ease-in-out 2s forwards;
+}
+
+/* ------------------------ Feature Section ----------------------------------------------*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#features {
+  padding: 2vw 5vw 0 4vw;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../Images//car13.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  transition: background-image 0.3s ease-in-out; /* Added smooth transition for background image */
+}
+
+
+#features .fea-box:hover {
+  cursor: pointer;
+  animation: fadeIn 1.5s ease-in-out 2s forwards;
+  transform: translate(13px);
+  background-color: #4f5650;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Added smooth transitions for transform and background color */
+}
+
+#features .fea-base {
+  animation: fadeIn 3s ease-in-out;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 50px;
+}
+
+#features h1 {
+  font-size: 50px;
+  color: black;
+  transition: color 0.3s ease-in-out; /* Added smooth transition for text color */
+}
+
+#features .fea-box {
+  background-color:  rgba(0, 0, 0, 0.514);
+  border: 1px solid black;
+  text-align: start;
+  padding: 53px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+#features .fea-box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  padding: 13px 0 7px 0;
+}
+
+#features .fea-box p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+}
+
+
+
+/* --------------------------------- FOoter */
+footer{
+  padding: 8vw;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+}
+
+footer .footer-col{
+  padding: 10px;
+}
+
+footer h3{
+  color: rgb(241, 240, 345);
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+footer li{
+  list-style: none;
+  color: #7b838a;
+  padding: 10px 0;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+footer li:hover{
+  color: rgb(241, 240, 345);
+
+}
+
+footer p{
+  color:  #7b838a;
+}
+
+footer .subscribe{
+  margin-top: 20px;
+}
+
+footer input{
+  width: 220px;
+  padding: 15px 12px;
+  background: #334f6c;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+
+footer .subscribe a{
+  text-decoration: none;
+  color: #fff;
+  background-color:  rgba(182, 194, 19, 0.815);
+  padding: 13px;
+
+}
+
+
+/*-----------------------------The contact section  ---------------------------------------*/
+
+.contact-form {
+  text-align: center;
+
+  @media (min-width: 576px) {
+    margin: 50px auto;
+    width: 500px;
+  }
+
+  @media (max-width: 575px) {
+    margin: 20px auto;
+    width: 300px;
+  }
+
+  @media (max-width: 767px) {
+    margin: 10px auto;
+    width: 250px;
+  }
+
+  @media (max-width: 480px) {
+    margin: 5px auto;
+    width: 200px;
+  }
+}
+form h1{
+  padding-bottom: 2rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
