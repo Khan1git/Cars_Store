@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/Style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Dodge Challenger</title>
 </head>
 
 <body>
     <nav>
-        <h1>DODGE</h1>
+        <h1 class=" x   wow animate__bounce ">DODGE</h1>
         <div class="navigation">
             <ul>
                 <li><a href="#home1">Home</a></li>
@@ -24,7 +25,7 @@
     </nav>
     <!-- --------------- THE HOME SECTION ---------------------- -->
     <section id="home1">
-        <div id="info">
+        <div id="info" >
             <h2>Welcome To Dodge Heaven</h2>
             <p>Dodge Heaven: Your ultimate destination for all things Dodge. Explore the automotive paradise with expert
                 insights, reviews, and enthusiast community</p>
@@ -38,9 +39,9 @@
     <!-- ------------- THE HOME 2 SECION -------------------------- -->
 
     <section id="home2">
-        <div id="info">
+        <div id="info" class="animate__animated wow animate__bounceInLeft">
             <h2>THE HELL CAT</h2>
-            <p>The Dodge Hellcat, a legendary muscle car, boasts a supercharged V8 engine, distinctive styling, and
+            <p  class="animate__animated animate__bounceInLeft">The Dodge Hellcat, a legendary muscle car, boasts a supercharged V8 engine, distinctive styling, and
                 exhilarating performance on the road.</p>
             <div class="btn">
                 <a class="blue" href="">ORDER</a>
@@ -50,7 +51,7 @@
 
     <!------------------------------------ THE HOME SECTION 3 --------------------------------->
     <section id="home3">
-        <div id="info">
+        <div id="info" class="animate__animated wow animate__bounceInRight">
             <h2>THE NIGHT MONSTER</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
                 adipisicing elit.</p>
@@ -63,17 +64,17 @@
     <!-- ------------------- THE CATEGORIES PART ------------------------------------------->
     <section id="features">
 
-        <h1>VEHICLE MANAGEMENT</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing sentium</p>
+        <h1 class="animate__animated wow animate__fadeInDown">VEHICLE MANAGEMENT</h1>
+        <p class="animate__animated wow animate__fadeInDown">Lorem ipsum dolor sit amet consectetur, adipisicing sentium</p>
         <div class="fea-base">
             <a href="./Vehicles.html">
-                <div class="fea-box">
+                <div class="fea-box animate__animated wow animate__fadeInDown">
                     <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                     <h3>VEHICLES SHOP</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </a>
-            <div class="fea-box">
+            <div class="fea-box animate__animated wow animate__fadeInDown">
                 <i class="fa fa-graduation-cap" aria-hidden="true">.</i>
                 <h3>MODIFICATIONS</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -83,18 +84,18 @@
 
     <!-- -------------------------- Adding the contact section ------------------- -->
     <form class="contact-form" id="contact-us" action="#">
-        <h1>Contact Us</h1>
+        <h1 class="animate__animated wow animate__fadeInTopRight">Contact Us</h1>
         <div class="container">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <input type="submit" value="Send Message">
+            <label for="name" class="animate__animated wow animate__fadeInTopLeft">Your Name:</label>
+            <input type="text" id="name" name="name" required  class="animate__animated wow animate__fadeInTopRight">
+            <label for="email"  class="animate__animated wow animate__fadeInTopLeft">Email Address:</label>
+            <input type="email" id="email" name="email" required class="animate__animated wow animate__fadeInTopRight">
+            <label for="message"  class="animate__animated wow animate__fadeInTopLeft">Message:</label>
+            <textarea id="message" name="message" rows="5" required class="animate__animated wow animate__fadeInTopRight"></textarea>
+            <input type="submit" value="Send Message" class="animate__animated wow animate__fadeInTopRight">
         </div>
     </form>
-    
+
     <!--  ----------------------- FOOTER SECTION --------------------------------- -->
 
     <footer>
@@ -131,6 +132,10 @@
     </footer>
 
     <script src="Script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+      new WOW().init();
+      </script>
 </body>
 
 </html>

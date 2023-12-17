@@ -166,9 +166,9 @@ nav .navigation ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out forwards,
-    slideIn 1.5s ease-in-out 0.5s forwards;
+  /* opacity: 0; */
+  /* animation: fadeIn 1.5s ease-in-out forwards,
+    slideIn 1.5s ease-in-out 0.5s forwards; */
   padding-top: 30px;
 }
 #home2 #info {
@@ -186,9 +186,9 @@ nav .navigation ul li a:hover {
   font-size: 2.2rem;
   letter-spacing: 1px;
   font-weight: bold;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out 0.5s forwards,
-    slideIn 1.5s ease-in-out 0.5s forwards;
+  /* opacity: 0; */
+  /* animation: fadeIn 1.5s ease-in-out 0.5s forwards,
+    slideIn 1.5s ease-in-out 0.5s forwards; */
 }
 
 #home2 #info p {
@@ -196,8 +196,8 @@ nav .navigation ul li a:hover {
   color: red;
   font-weight: 0.9rem;
   line-height: 25px;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out 1s forwards;
+  /* opacity: 0; */
+  /* animation: fadeIn 1.5s ease-in-out 1s forwards; */
 }
 
 #home2 .btn {
@@ -256,9 +256,9 @@ nav .navigation ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  opacity: 0;
+  /* opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards,
-    slideIn 1.5s ease-in-out 0.5s forwards;
+    slideIn 1.5s ease-in-out 0.5s forwards; */
   padding-top: 30px;
 }
 #home3 #info {
@@ -276,18 +276,18 @@ nav .navigation ul li a:hover {
   font-size: 2.2rem;
   letter-spacing: 1px;
   font-weight: bold;
-  opacity: 0;
+  /* opacity: 0;
   animation: fadeIn 1.5s ease-in-out 0.5s forwards,
-    slideIn 1.5s ease-in-out 0.5s forwards;
-}
+    slideIn 1.5s ease-in-out 0.5s forwards;*/
+} 
 
 #home3 #info p {
   text-align: center;
   color: red;
   font-weight: 0.9rem;
   line-height: 25px;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-in-out 1s forwards;
+  /* opacity: 0;
+  animation: fadeIn 1.5s ease-in-out 1s forwards; */
 }
 
 #home3 .btn {
@@ -515,4 +515,23 @@ form h1{
   padding: 10px;
   border: none;
   cursor: pointer;
+}
+
+
+/* ----------------- Customizing the animation duration--------------- */
+
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 4s;
+}
+.animate__animated.animate__bounceInRight {
+  --animate-duration: 4s;
+}
+.animate__animated.animate__bounceInLeft {
+  --animate-duration: 4s;
+}
+.animate__animated.animate__fadeInTopRight {
+  --animate-duration: 4s;
+}
+.animate__animated.animate__fadeInTopLeft {
+  --animate-duration: 4s;
 }
